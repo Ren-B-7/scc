@@ -128,7 +128,10 @@
       "webinfo"
     ],
     "line_comment": [],
-    "multi_line": [["<!--", "-->"], ["<%--", "-->"]],
+    "multi_line": [
+      ["<!--", "-->"],
+      ["<%--", "-->"]
+    ],
     "quotes": []
   },
   "ATS": {
@@ -279,7 +282,11 @@
     ],
     "extensions": ["a68"],
     "line_comment": [],
-    "multi_line": [["#", "#"], ["CO", "CO"], ["COMMENT", "COMMENT"]],
+    "multi_line": [
+      ["#", "#"],
+      ["CO", "CO"],
+      ["COMMENT", "COMMENT"]
+    ],
     "quotes": [
       {
         "end": "\"",
@@ -351,7 +358,10 @@
     ],
     "extensions": ["aidl"],
     "line_comment": ["//"],
-    "multi_line": [["/**", "*/"], ["/*", "*/"]],
+    "multi_line": [
+      ["/**", "*/"],
+      ["/*", "*/"]
+    ],
     "quotes": [
       {
         "end": "\"",
@@ -504,7 +514,10 @@
     ],
     "extensions": ["astro"],
     "line_comment": ["//"],
-    "multi_line": [["<!--", "-->"], ["/*", "*/"]],
+    "multi_line": [
+      ["<!--", "-->"],
+      ["/*", "*/"]
+    ],
     "quotes": [
       {
         "end": "\"",
@@ -768,7 +781,10 @@
     ],
     "extensions": ["blade.php"],
     "line_comment": [],
-    "multi_line": [["{{--", "--}}"], ["<!--", "-->"]],
+    "multi_line": [
+      ["{{--", "--}}"],
+      ["<!--", "-->"]
+    ],
     "quotes": []
   },
   "Blueprint": {
@@ -950,7 +966,10 @@
     ],
     "extensions": ["c3"],
     "line_comment": ["//"],
-    "multi_line": [["/*", "*/"],["<*", "*>"]],
+    "multi_line": [
+      ["/*", "*/"],
+      ["<*", "*>"]
+    ],
     "quotes": [
       {
         "end": "\"",
@@ -1037,7 +1056,19 @@
       "!= ",
       "== "
     ],
-    "extensions": ["cc", "cpp", "cxx", "c++", "pcc", "ino", "ccm", "cppm", "cxxm", "c++m", "mxx"],
+    "extensions": [
+      "cc",
+      "cpp",
+      "cxx",
+      "c++",
+      "pcc",
+      "ino",
+      "ccm",
+      "cppm",
+      "cxxm",
+      "c++m",
+      "mxx"
+    ],
     "line_comment": ["//"],
     "multi_line": [["/*", "*/"]],
     "quotes": [
@@ -1436,7 +1467,10 @@
     ],
     "extensions": ["soy"],
     "line_comment": ["//"],
-    "multi_line": [["/**", "*/"], ["/*", "*/"]],
+    "multi_line": [
+      ["/**", "*/"],
+      ["/*", "*/"]
+    ],
     "quotes": [
       {
         "end": "\"",
@@ -1858,7 +1892,10 @@
     ],
     "extensions": ["d"],
     "line_comment": ["//"],
-    "multi_line": [["/*", "*/"], ["/+", "+/"]],
+    "multi_line": [
+      ["/*", "*/"],
+      ["/+", "+/"]
+    ],
     "nestedmultiline": true,
     "quotes": [
       {
@@ -2105,9 +2142,7 @@
       "<% "
     ],
     "extensions": ["eex"],
-    "line_comment": [
-      "#"
-    ],
+    "line_comment": ["#"],
     "multi_line": [["<!--", "-->"]],
     "quotes": [
       {
@@ -2151,10 +2186,7 @@
       "<. "
     ],
     "extensions": ["heex", "leex"],
-    "line_comment": [
-      "#",
-      "<!--"
-    ],
+    "line_comment": ["#", "<!--"],
     "multi_line": [["<!--", "-->"]],
     "quotes": [
       {
@@ -3226,7 +3258,10 @@
     ],
     "extensions": ["hbs", "handlebars"],
     "line_comment": [],
-    "multi_line": [["<!--", "-->"], ["{{!", "}}"]],
+    "multi_line": [
+      ["<!--", "-->"],
+      ["{{!", "}}"]
+    ],
     "quotes": [
       {
         "end": "\\\"",
@@ -3518,28 +3553,28 @@
     ]
   },
   "JCL": {
-  "complexitychecks": [
-    " IF",                    
-    " THEN",                  
-    " ELSE",                  
-    " PROC=",                 
-    " PGM=",                  
-    " DD ",                   
-    " EXEC ",                 
-    " JOB ",                  
-    " COND=",                 
-    " INCLUDE",               
-    " PEND"                     
-  ],
-  "extensions": ["jcl", "jcls"],
-  "line_comment": ["//*"],
-  "quotes": [
-    {
-      "start": "'",
-      "end": "'"
-    }
-  ]
- },
+    "complexitychecks": [
+      " IF",
+      " THEN",
+      " ELSE",
+      " PROC=",
+      " PGM=",
+      " DD ",
+      " EXEC ",
+      " JOB ",
+      " COND=",
+      " INCLUDE",
+      " PEND"
+    ],
+    "extensions": ["jcl", "jcls"],
+    "line_comment": ["//*"],
+    "quotes": [
+      {
+        "start": "'",
+        "end": "'"
+      }
+    ]
+  },
   "W.I.S.E. Jobfile": {
     "complexitychecks": [],
     "extensions": ["fgmj"],
@@ -4615,12 +4650,23 @@
   "Makefile": {
     "complexitychecks": [
       "for ",
+      "@for ",
       "for(",
+      "@for(",
       "if ",
+      "@if ",
       "if(",
+      "@if(",
       "switch ",
       "while ",
+      "@while ",
+      "ifeq",
+      "ifneq",
+      "ifdef",
+      "ifndef",
       "else ",
+      "include",
+      "define",
       "|| ",
       "&& ",
       "!= ",
@@ -5494,7 +5540,10 @@
     ],
     "extensions": ["pas"],
     "line_comment": ["//"],
-    "multi_line": [["{", "}"], ["(*", "*)"]],
+    "multi_line": [
+      ["{", "}"],
+      ["(*", "*)"]
+    ],
     "quotes": [
       {
         "end": "'",
@@ -6254,7 +6303,10 @@
     ],
     "extensions": ["cshtml", "razor"],
     "line_comment": [],
-    "multi_line": [["<!--", "-->"], ["@*", "*@"]],
+    "multi_line": [
+      ["<!--", "-->"],
+      ["@*", "*@"]
+    ],
     "quotes": []
   },
   "Rebol": {
@@ -6743,14 +6795,7 @@
       "< "
     ],
     "extensions": ["scl"],
-    "keywords": [
-      "rel ",
-      "query ",
-      "count(",
-      "where ",
-      "forall(",
-      "exists("
-    ],
+    "keywords": ["rel ", "query ", "count(", "where ", "forall(", "exists("],
     "line_comment": ["//"],
     "multi_line": [["/*", "*/"]],
     "quotes": [
@@ -7245,7 +7290,10 @@
     ],
     "extensions": ["svelte"],
     "line_comment": ["//"],
-    "multi_line": [["<!--", "-->"], ["/*", "*/"]],
+    "multi_line": [
+      ["<!--", "-->"],
+      ["/*", "*/"]
+    ],
     "quotes": [
       {
         "end": "\"",
@@ -7591,7 +7639,10 @@
     ],
     "extensions": ["tera"],
     "line_comment": [],
-    "multi_line": [["<!--", "-->"], ["{#", "#}"]],
+    "multi_line": [
+      ["<!--", "-->"],
+      ["{#", "#}"]
+    ],
     "quotes": []
   },
   "Terraform": {
@@ -8268,7 +8319,10 @@
     ],
     "extensions": ["vue"],
     "line_comment": ["//"],
-    "multi_line": [["<!--", "-->"], ["/*", "*/"]],
+    "multi_line": [
+      ["<!--", "-->"],
+      ["/*", "*/"]
+    ],
     "quotes": [
       {
         "end": "\"",
